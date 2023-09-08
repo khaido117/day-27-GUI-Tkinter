@@ -27,7 +27,7 @@ result_label.grid(column=2, row=3)
 #Button
 
 def mile_converter():
-    result_label["text"] = int(input.get()) * 1.6
+    result_label["text"] = round(float(input.get()) * 1.6)
 
 button = Button(text="Calculate", command= mile_converter)
 button.grid(column=2, row = 4)
