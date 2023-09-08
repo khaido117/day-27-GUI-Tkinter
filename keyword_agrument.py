@@ -1,6 +1,10 @@
-def calculate(**kwargs):
-    print(kwargs)
-    for key, value in kwargs.items():
-        print(key, value)
+def calculate(n, **kwargs):
+    # print(kwargs)
+    # for key, value in kwargs.items():
+    #     print(key, value)
+    # print(kwargs["add"])
+    n += kwargs["add"]
+    n *= kwargs["multiply"]
+    print(n)
 
-calculate(add = 3, muliply = 5)
+calculate(2, add = 3, multiply = 5)
